@@ -11,34 +11,68 @@
     <!-- Start Coding Here -->
     <!--Dev_Pooh-->
     <div class="bg-[#F6F6FB] pb-10">
-      <nav class="p-6">
+      <nav class="p-6 flex justify-center">
         <div
-          class="flex justify-between items-center bg-white rounded-full px-2 py-8"
+          class="bg-white fixed rounded-full px-2 py-8 sm:flex sm:flex-col sm:text-left sm:w-[95vw] lg:flex lg:flex-row lg:justify-between lg:w-[95vw]"
         >
-          <p class="font-bold text-xl pl-10">Acme</p>
-          <div class="flex items-center pr-10 gap-10">
+          <div class="flex justify-between">
+            <p class="font-bold text-xl pl-10">Acme</p>
+            <img
+              src="./img/Frame.png"
+              alt="icon-menu"
+              class="lg:hidden pr-10"
+            />
+          </div>
+          <div class="pr-10 gap-10 sm:hidden lg:flex lg:items-center">
             <p class="hover:text-[#5E44FF] hover:underline">Home</p>
             <p class="hover:text-[#5E44FF] hover:underline">Features</p>
             <p class="hover:text-[#5E44FF] hover:underline">Pricing</p>
             <p class="hover:text-[#5E44FF] hover:underline">Contact</p>
           </div>
         </div>
+        <!--<div
+          class="bg-white fixed rounded-3xl gap-5 px-2 py-8 sm:flex sm:flex-col sm:items-center sm:mt-20 sm:w-[95vw] lg:hidden"
+        >
+          <p class="hover:text-[#5E44FF] hover:underline">Home</p>
+          <p class="hover:text-[#5E44FF] hover:underline">Features</p>
+          <p class="hover:text-[#5E44FF] hover:underline">Pricing</p>
+          <p class="hover:text-[#5E44FF] hover:underline">Contact</p>
+        </div>-->
       </nav>
+
       <hero>
-        <div class="flex flex-col items-center gap-8 mt-10">
-          <p
-            class="bg-[#563AFF1A] w-[236px] h-[40px] text-center pt-[8px] rounded-full text-[#5E44FF]"
-          >
+        <div class="flex flex-col items-center gap-8 mt-10 text-center">
+          <p class="bg-[#563AFF1A] w-[236px] h-[40px] text-center pt-[8px] rounded-full text-[#5E44FF] sm:mt-[100px] lg:mt-[80px]">
             🌈 Acme Productivity App
           </p>
 
-          <div class="flex flex-col items-center">
-            <h1 class="inline text-[80px] font-medium">
-              Boost your <em class="not-italic text-[#5E44FF]">Product</em>ivity
-            </h1>
-            <p class="text-[24px] font-medium">
-              Streamline your workflow with our all-in-one productivity app.
-            </p>
+          <div class="flex flex-col items-center sm:gap-8 lg:gap-0">
+            <div>
+              <h1 class="inline text-[80px] font-medium sm:hidden lg:contents">
+                Boost your
+                <em class="not-italic text-[#5E44FF]">Product</em>ivity
+              </h1>
+            </div>
+            <div class="lg:hidden flex flex-col gap-0">
+              <h1 class="inline text-[80px] font-medium mb-[0px]">
+                Boost your
+              </h1>
+              <h1 class="inline text-[80px] font-medium mt-[-30px]">
+                <em class="not-italic text-[#5E44FF]">Product</em>ivity
+              </h1>
+            </div>
+            <div>
+              <p class="text-[24px] font-medium sm:hidden lg:contents">
+                Streamline your workflow with our all-in-one productivity app.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-0 sm:contents lg:hidden text-[36px] font-medium"
+            >
+              <p class="mb-0">Streamline your workflow</p>
+              <p class="mt-[-30px]">with our all-in-one</p>
+              <p class="mt-[-30px]">productivity app.</p>
+            </div>
           </div>
 
           <button
@@ -51,6 +85,7 @@
     </div>
 
     <!--Dev_Earth-->
+
     <div
       class="flex flex-col items-center mt-10 mb-40 gap-4 mx-4 min-[834px]:flex min-[834px]:flex-row min-[834px]:justify-center"
     >
@@ -154,7 +189,7 @@
           Acme productivity app ©2024
         </h3>
         <div
-<<<
+
           class="Button-collection flex flex-row justify-between gap-[37px] text-base font-semibold text-[#1A1A2C] w-fit">
 
           <button class="gap[6px] rounded-[5px]">FAQ</button>
@@ -163,6 +198,7 @@
           <button class="gap[6px] rounded-[5px]">Pricing</button>
         </div>
       </footer>
+
     </div>
   </body>
 </html>
